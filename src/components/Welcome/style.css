@@ -1,0 +1,29 @@
+.welcome-container {
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.welcome-text {
+    margin: 30px;
+    color: #fff;
+}
+
+.welcome-text p {
+    text-indent: 40px;
+}
+
+.photo-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo {
+
+    height: 547px;
+    width: 412px;
+}
