@@ -11,8 +11,8 @@ const Welcome = (props) => {
   return(
     <div className="welcome-container">
         <div className="welcome-text">
-            <h2>Hi, my name is Roger Lu and I like to write code.</h2>
-            <p>Even so, this website isn't just a portfolio, but a way for me to post about all the new things I learn and experience...</p>
+            <h2>Hi, my name is Roger Lu and I'm a software developer</h2>
+            <p>Even so, this website isn't just a portfolio, but a way for me to post about all the new things I learn and experience,</p>
             <p>and not just in tech.</p>
         </div>
         <div className="photo-container">
