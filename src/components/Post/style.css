@@ -2,3 +2,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+article {
+    margin: 100px 0;
+    padding: 50px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 0.5em solid #FF6347;
+}
