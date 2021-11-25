@@ -1,24 +1,28 @@
 const express = require('express')
+const cors = require("cors");
 const app = express()
+
+app.use(cors());
+app.use(express.json())
 
 let notes = [
     {
       id: 1,
-      content: "HTML is easy",
+      title: "Hello world",
+      content: "Your mom is easy",
       date: "2019-05-30T17:30:31.098Z",
-      important: true
     },
     {
       id: 2,
-      content: " can execute only Javascript",
-      date: "2019-05-30T18:39:34.091",
-      important: false
+      title: "Hello papa ",
+      content: "I like your wife",
+      date: "2019-05-30T17:30:31.098Z",
     },
     {
       id: 3,
-      content: "GET and POST are the most important methods of HTTP protocol",
-      date: "2019-05-30T19:20:14.298Z",
-      important: true
+      title: "Naruto",
+      content: "I like anime waifus",
+      date: "2019-05-30T17:30:31.098Z",
     }
   ]
 
@@ -27,7 +31,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/notes', (req, res) => {
-    res.json(notes);
+  res.send(notes);
 })
 
 const PORT = 3001
